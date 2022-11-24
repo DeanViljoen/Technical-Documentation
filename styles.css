@@ -6,6 +6,7 @@ html {
   display: block;
 }
 
+
 .nav-link {
   display: block;
   width: 100%;
@@ -21,7 +22,10 @@ html {
   padding-top: 5px;
   text-decoration: none;
   font-family: "Roboto Condensed";
-  
+}
+
+.nav-link:first-of-type {
+  margin-top: 0px !important;
 }
 
 .nav-link:hover {
@@ -51,7 +55,7 @@ html {
 }
 
 #nav-area {
-  background-color: red;
+  background-color: black;
   margin: 0;
   min-width: 290px;
   width: 300px;
@@ -133,4 +137,26 @@ h1 {
     height: 0;
     overflow: hidden;
   }
+}
+
+@media (max-height: 600px) {
+
+  #nav-header {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+ #nav-area {
+   min-width: 200px;
+   width: 200px;
+ }
+ #content-area {
+	left: 200px;
+ }
+.nav-link {
+  font-size: 1.5rem;
+  height: auto;
+}
 }
