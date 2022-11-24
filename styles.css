@@ -114,14 +114,14 @@ h1 {
 
 @media (max-width: 400px) {
   #content-area {
-    position: relative;
+    position: absolute;
     top: 200px;
     left: 0;
     height: calc(100% - 200px);
     }
     
   #nav-area {
-    position: absolute;
+    position: sticky;
     height: 200px;
     width: 100%;
   }
